@@ -1,0 +1,7 @@
+{
+	"type": "bnn-mnist",
+	"name": "bnn_16_3blk_3",
+	"blocks": [ {"in_dim":16, "out_dim": 48},
+		{"in_dim":48, "out_dim": 40},
+		{"in_dim":40, "out_dim": 15}]
+}

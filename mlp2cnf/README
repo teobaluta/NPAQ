@@ -1,0 +1,10 @@
+The PBLib project page is located at
+<http://tools.computational-logic.org/content/pblib.php>. You can either use the
+provided binaries or compile the source code yourself. However, the source code
+(following the provided instructions) seems to be missing some definitions of
+`floor` and `ceil` functions so we added the `math` header in `PBConfig.h`.
+
+We also made few changes to PBLib noted below:
+- some debug prints most of which are commented out 
+- forcing encoding using adder
+
