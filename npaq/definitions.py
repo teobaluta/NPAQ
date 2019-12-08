@@ -17,8 +17,8 @@ ROOT_BNN = os.path.join(TESTS_INPUT, 'bnn_tests')
 BNN_TEST_CFG = os.path.join(TESTS_INPUT, 'bnn_tests_cfg')
 
 # XXX hack should put it as option but too many options
-RESULTS_DIR = '/mnt/storage/teo/npaq/ccs-submission/experiments'
 # UNCOMMENT THIS TO RUN ON THE SHARED STORAGE
+RESULTS_DIR = os.path.join(ROOT_DIR, '..')
 #RESULTS_DIR = '/home/teo/test-nn/experiments'
 TRAINED_MODELS_DIR = os.path.join(RESULTS_DIR, 'models')
 TRAINED_MODELS_CP_DIR = os.path.join(RESULTS_DIR, 'models_checkpoint')

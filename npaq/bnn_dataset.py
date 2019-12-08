@@ -774,7 +774,8 @@ class BNN(object):
 
         if self.args.dataset == 'mnist':
             test_loader = torch.utils.data.DataLoader(
-              datasets.MNIST(definitions.DATA_PATH, train=False, transform=trans),
+              datasets.MNIST(definitions.DATA_PATH, train=False,
+                             transform=trans, download=True),
                 batch_size=1, shuffle=True)
         elif self.args.dataset == 'hmnist':
             if 'data_folder' not in self.args:
