@@ -23,17 +23,19 @@ pip install -r requirements.txt
 
 It's always a good idea to check the options with --help.
 
-The general structure is to first specify that we are dealing with BNNs, next to specify neural network size and input space and the dataset.
-Then NPAQ offers the following options:
-- `encode`, `quant-fair`
+The general structure is to first specify that we are dealing with BNNs, next to specify neural network architecture (`--arch`), input size (`--resize`) and the dataset (`--dataset`).
+NPAQ offers the following options:
+
+- `encode`(to just encode the BNN), `quant-fair`, `quant-robust` and `quant-canary` for trojan attack
 
 `python npaq bnn --arch 1blk_100 --dataset mnist --resize 10,10 quant-robust 2`
 
-The encode option assumes there is a trained model in $results_dir/$model_name/train. For example, for a BNN with architecture of 3 internal blocks with 200 neurons and an output block with 100 neuron-input trained over an input of 28x28 (the default MNIST input) the model_name is bnn_784_3blks_200_100.
+The encode option assumes there is a trained model in `models/mnist/` in the format of a `.pt` file (PyTorch model). For example, for a BNN with architecture of 3 internal blocks with 200 neurons and an output block with 100 neuron-input trained over an input of 28x28 (the default MNIST input) the model_name is bnn_784_3blks_200_100.
 
 I added support to specify the BNN model in a JSON config file. Instead of adding classes to the existing nncrusher/models/bnn.py for every architecture, we can use configs in JSON format. Tested training option only. Command is python nncrusher bnn-mnist --config example_cfg/bnn_1blk.json train.
 JSON Schema:
 
+```
 bnn_schema = {
     "type" : "object",
     "properties" : {
@@ -52,5 +54,4 @@ bnn_schema = {
                   },
     }
 }
-
-python 
+```
