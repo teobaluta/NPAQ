@@ -5,19 +5,19 @@ Neural Property Approximate Quantifier
 
 - gcc 5.4.0: To compile the pblib, you need gcc 5.4.0 (newer version gcc 7.4.0
   is not compiling, we have not tested with other versions).
-  - Python 2.7
-  - (currently z3 requirement but will this dependency will be eliminated)
-  - (optional) scalmc (unless only encoding is used)
+- Python 2.7
+- (currently z3 requirement but will this dependency will be eliminated)
+- (optional) scalmc (unless only encoding mode is used, you need to have scalmc installed)
 
 
-  First, compile the encoder `cd mlp2cnf; make`. 
+First, compile the encoder `cd mlp2cnf; make`. 
 
-  We recommend you use a virtualenv 
+We recommend you use a virtualenv 
 
-  `mkvirtualenv npaq
-  pip install -r requirements.txt
-  ./setup.sh
-  `
+`mkvirtualenv npaq
+pip install -r requirements.txt
+./setup.sh
+`
 
 ## Example Usage
 
