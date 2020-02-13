@@ -50,7 +50,7 @@ project's root directory but we will go over the options below.
 block either as a JSON file (see [1]) or you can select from the predefined
 ones: `{1blk_100, 2blk_100_50}`
 See `npaq/models/bnn.py` for the definitions and project page for details on the [BNN models in
-the benchmark](https://teobaluta.github.io/npaq/#bnn_models).
+the benchmark](https://teobaluta.github.io/NPAQ/#bnn_models).
 
 - Dataset: By default, the dataset is MNIST (`--dataset mnist`), you can select UCI Adult dataset
   using the option `--dataset uci_adult`.
@@ -96,7 +96,7 @@ Example query:
 ## Models and BNN Training
 
 We provide the trained models used in the paper as `.pt` files in at our
-[project page](). Just copy them in the `models/mnist` folder and specify the
+[project page](https://teobaluta.github.io/NPAQ/#benchmarks). Just copy them in the `models/mnist` folder and specify the
 architecture with the `--arch` option 
 
 We used the PyTorch implementation of the binarized neural networks available at
@@ -119,5 +119,5 @@ See training help menu with `python npaq bnn train --help`.
 
 If you use NPAQ, please cite our work.
 
-The benchmarks used in our evaluation can be found [here](). More info on the
-project page, [NPAQ](https://teobaluta.github.io/npaq).
+The benchmarks used in our evaluation can be found [here](https://teobaluta.github.io/NPAQ/). More info on the
+project page, [NPAQ](https://teobaluta.github.io/NPAQ).
