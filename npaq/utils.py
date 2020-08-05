@@ -430,8 +430,10 @@ def get_output_fnames(formula_fname):
     formula_basefname = os.path.basename(formula_fname)
     output_scalmc_fname = os.path.join(definitions.COUNT_OUT_DIR,
                                        formula_basefname + '.out')
+    samples_fname = os.path.join(definitions.COUNT_OUT_DIR,
+                                 formula_basefname + '.samples')
 
-    return output_scalmc_fname
+    return output_scalmc_fname, samples_fname
 
 def set_logger_prop(dataset, prop_name, filename):
     logs_dir = os.path.join(definitions.RESULTS_DIR, 'logs')

@@ -52,12 +52,14 @@ def realtime_scalmc(process, timeout, output_scalmc_fname):
     return res
 
 def invoke_scalmc(formula_fname, proj_size, epsilon=0.8, delta=0.2,
-                  timeout=1000, realtime=True):
+                  timeout=1000, realtime=True, num_samples=10):
     """
     """
     start_iter = proj_size - 20
 
-    output_scalmc_fname = utils.get_output_fnames(formula_fname)
+    # Depending on the scalmc version can ask for satisfying assingments and save these in a file
+    # called 'samples_fname'
+    output_scalmc_fname, samples_fname = utils.get_output_fnames(formula_fname)
 
     call_args = [definitions.COUNTER, '-s', '1', formula_fname]
 
