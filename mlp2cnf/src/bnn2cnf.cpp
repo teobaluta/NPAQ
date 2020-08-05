@@ -17,13 +17,13 @@ int parse_opt_args(int start_arg, int argc, char *argv[]) {
 
 	cout << "argv[" << argv[start_arg] << endl;
 	if (argc >= start_arg + 1) {
-		if (strncmp(argv[start_arg], "--debug", 5) == 0)
+		if (strncmp(argv[start_arg], "--debug", 7) == 0)
 			debug = 1;
-		else if (strncmp(argv[start_arg], "--card", 4) == 0)
+		else if (strncmp(argv[start_arg], "--card", 6) == 0)
 			encoder = "card";
-		else if (strncmp(argv[start_arg], "--bdd", 3) == 0)
+		else if (strncmp(argv[start_arg], "--bdd", 5) == 0)
 			encoder = "bdd";
-		else if (strncmp(argv[start_arg], "--equal", 5) == 0)
+		else if (strncmp(argv[start_arg], "--equal", 7) == 0)
 			perturb_eq = true;
 		else {
 			cout << "Unrecognized command option " << argv[start_arg] << "." << endl;
