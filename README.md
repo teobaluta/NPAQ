@@ -90,6 +90,11 @@ Example query:
 
 `python npaq bnn --arch 1blk_100 --dataset mnist --resize 10,10 quant-robust 2`
 
+The query above is taking an image from mnist at random. You may specify a concrete input as
+following:
+
+`python npaq bnn --encoder card --arch 1blk_100 --dataset mnist --resize 10,10 quant-robust 2 --concrete_ip concrete_inputs --num_samples 1`
+
 - Trojan Attack Success: `quant-canary`.
 
 
