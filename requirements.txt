@@ -46,7 +46,7 @@ subprocess32==3.5.2
 tabulate==0.8.2
 tensorboard==1.8.0
 tensorboardX==1.4
-tensorflow==1.8.0
+tensorflow==1.15.2
 termcolor==1.1.0
 Theano==0.8.0
 torch==1.0.1.post2
