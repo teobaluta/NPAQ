@@ -48,11 +48,11 @@ ADV_TRAIN_DATA_DIR = os.path.join(DATA_PATH, 'adv_train_data')
 
 
 # constraints for dataset
-UCI_CONSTRAINTS = '/mnt/storage/teo/npaq/ccs-submission/experiments/dataset_constraints/uci_adult-constraints.txt'
+UCI_CONSTRAINTS = os.path.abspath(os.path.join(ROOT_DIR, '..',
+                                               'dataset_constraints/uci_adult-constraints.txt'))
 
-# Hardcoded values
-TROJAN_IMGS='/mnt/storage/teo/npaq/ccs-submission/experiments/trojan_imgs/'
-TROJAN_MASK='/mnt/storage/teo/npaq/ccs-submission/experiments/trojan_mask/'
+TROJAN_IMGS = os.path.abspath(os.path.join(ROOT_DIR, '..', 'trojan_imgs'))
+TROJAN_MASK = os.path.abspath(os.path.join(ROOT_DIR, '..', 'trojan_mask'))
 
 TROJAN_TARGETS=[0,1,4,5,9]
 TROJAN_EPOCHS=[1,10,30]
