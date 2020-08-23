@@ -95,7 +95,12 @@ following:
 
 `python npaq bnn --encoder card --arch 1blk_100 --dataset mnist --resize 10,10 quant-robust 2 --concrete_ip concrete_inputs --num_samples 1`
 
-- Trojan Attack Success: `quant-canary`.
+- Trojan Attack Success: The trojan attack success property reduces to quantifying how many inputs
+  with specific input constraints (the trigger constraints found under `trojan_imgs` folder) are
+  labeled as the attack's target label. We encode the trojan sucess for all labels and all epochs
+  for a specific architecture as follows:
+
+`python npaq bnn --encoder card --arch 1blk_100 --dataset mnist --resize 10,10 quant-label --w_trojan trojan-success --just-encode`
 
 
 ## Models and BNN Training
