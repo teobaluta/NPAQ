@@ -36,7 +36,7 @@ ptyprocess==0.5.2
 pyparsing==2.2.0
 python-dateutil==2.7.3
 pytz==2018.4
-PyYAML==3.12
+PyYAML==5.4
 scandir==1.7
 scipy==1.1.0
 seaborn==0.9.0
