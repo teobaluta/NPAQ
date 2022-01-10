@@ -131,3 +131,5 @@ If you use NPAQ, please cite our work.
 
 The benchmarks used in our evaluation can be found [here](https://teobaluta.github.io/NPAQ/). More info on the
 project page, [NPAQ](https://teobaluta.github.io/NPAQ).
+
+Checkout our subsequent work on this in [PROVERO](https://github.com/teobaluta/provero).
