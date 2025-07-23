@@ -106,7 +106,7 @@ following:
 ## Models and BNN Training
 
 We provide the trained models used in the paper as `.pt` files in at our
-[project page](https://teobaluta.github.io/NPAQ/#benchmarks). Just copy them in the `models/mnist` folder and specify the
+[project page](https://teobaluta.github.io/projects/NPAQ/#benchmarks). Just copy them in the `models/mnist` folder and specify the
 architecture with the `--arch` option 
 
 We used the PyTorch implementation of the binarized neural networks available at
